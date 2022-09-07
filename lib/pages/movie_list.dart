@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_http_request/pages/movie_detail.dart';
 import 'package:flutter_http_request/services/http_service.dart';
 
 class MovieList extends StatefulWidget {
