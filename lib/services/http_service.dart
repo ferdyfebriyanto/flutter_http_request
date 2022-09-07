@@ -1,4 +1,6 @@
+import 'dart:convert';
 import 'dart:io';
+import 'package:flutter_http_request/models/movie.dart';
 import 'package:http/http.dart' as http;
 
 class HttpService {
@@ -11,8 +13,9 @@ class HttpService {
     http.Response result = await http.get(Uri.parse(uri));
     if (result.statusCode == HttpStatus.ok) {
       print("Sukses");
-      String response = result.body;
-      return response;
+      final jsonResponse = json.decode(result.body);
+      final moviesMap = jsonResponse['results'];
+      List movies = moviesMap.map((i) => Movie.fromJson(i)).toList();
     } else {
       print("Fail");
       return null;
