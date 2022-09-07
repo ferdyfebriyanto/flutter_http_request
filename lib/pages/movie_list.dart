@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_http_request/services/http_service.dart';
 
 class MovieList extends StatefulWidget {
   const MovieList({Key? key}) : super(key: key);
@@ -8,8 +9,29 @@ class MovieList extends StatefulWidget {
 }
 
 class _MovieListState extends State<MovieList> {
+  String result = "";
+  HttpService service;
+
+  @override
+  void initState() {
+    service = HttpService();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    service.getPopularMovies().then((value) {
+      setState(() {
+        result = value;
+      });
+    });
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Popular Movies"),
+      ),
+      body: Container(
+        child: Text(result),
+      ),
+    );
   }
 }
