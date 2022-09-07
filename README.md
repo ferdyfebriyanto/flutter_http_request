@@ -20,3 +20,7 @@ Detail Movie
 
 ![Detail Movie](./images/03.png)
 
+Challenge Memodifikasi Tampilan Lebih Menarik
+
+![Detail Movie Modifikasi](./images/04.png)
+
