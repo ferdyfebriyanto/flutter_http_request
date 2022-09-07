@@ -11,6 +11,8 @@ class _MovieListState extends State<MovieList> {
   late List movies;
   late HttpService service;
 
+  final String imgPath = 'https://image.tmdb.org/t/p/w500/';
+
   Future initialize() async {
     movies = [];
     movies = (await service.getPopularMovies()) as List;
@@ -40,11 +42,20 @@ class _MovieListState extends State<MovieList> {
               color: Colors.white,
               elevation: 2.0,
               child: ListTile(
-                title: Text(movies[position].title),
-                subtitle: Text(
-                  'Rating = ' + movies[position].voteAverage.toString(),
-                ),
-              ),
+                  leading: Image.network(imgPath + movies[position].posterPath),
+                  title: Text(
+                    movies[position].title,
+                    style:
+                        TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+                  ),
+                  subtitle: Text(
+                    'Rating: ' + movies[position].voteAverage.toString(),
+                  ),
+                  onTap: () {
+                    MaterialPageRoute route = MaterialPageRoute(
+                        builder: (_) => MovieDetail(movies[position]));
+                    Navigator.push(context, route);
+                  }),
             );
           }),
     );
