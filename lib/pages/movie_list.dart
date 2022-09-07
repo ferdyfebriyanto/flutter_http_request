@@ -9,7 +9,8 @@ class MovieList extends StatefulWidget {
 }
 
 class _MovieListState extends State<MovieList> {
-  String result = "";
+  late int moviesCount;
+  late List movies;
   late HttpService service;
 
   @override
