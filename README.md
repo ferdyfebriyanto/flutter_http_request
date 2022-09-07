@@ -8,6 +8,8 @@
 
 ## Praktikum
 
+Langkah-langkah praktikum pada [tautan]() ini.
+
 ![Hasil praktikum rest api](./images/01.png)
 
 ## Challenge
