@@ -32,14 +32,27 @@ class MovieDetail extends StatelessWidget {
                 child: Image.network(path),
               ),
               Container(
-                padding: EdgeInsets.only(left: 16, bottom: 16),
+                padding: EdgeInsets.only(left: 16),
                 child: Row(
                   children: [
+                    const Icon(
+                      Icons.star,
+                      color: Colors.yellow,
+                    ),
                     Text(
-                      'Rating: ' + movie.voteAverage.toString(),
+                      movie.voteAverage.toString(),
                       style: TextStyle(fontSize: 16),
                     ),
                   ],
+                ),
+              ),
+              Container(
+                child: const Padding(
+                  padding: EdgeInsets.all(16),
+                  child: Text(
+                    "Sinopsis",
+                    style: TextStyle(fontSize: 22),
+                  ),
                 ),
               ),
               Container(
