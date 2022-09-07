@@ -1,16 +1,15 @@
-# flutter_http_request
+# HTTP REQUEST DAN REST API
 
-A new Flutter project.
+## Studi Kasus Aplikasi Film dengan Akses REST API
 
-## Getting Started
+- Mengakses Rest API dari themoviedb.org
+- Menampilkan film populer
+- Menampilkan detail dari film populer yang dipilih oleh user
 
-This project is a starting point for a Flutter application.
+## Praktikum
 
-A few resources to get you started if this is your first Flutter project:
+![Hasil praktikum rest api](./images/01.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Challenge
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Hasil memodifikasi tampilan yang menarik](./images/02.png)
