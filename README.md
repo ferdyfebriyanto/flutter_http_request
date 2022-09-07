@@ -18,4 +18,5 @@ Challenge Memodifikasi Tampilan Movie List
 
 Detail Movie
 
+![Detail Movie](./images/03.png)
 
