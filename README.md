@@ -1,4 +1,4 @@
-# HTTP REQUEST DAN REST API
+# #24 | HTTP REQUEST DAN REST API
 
 ## Studi Kasus Aplikasi Film dengan Akses REST API
 
@@ -8,7 +8,8 @@
 
 ## Praktikum
 
-Langkah-langkah praktikum pada [tautan]() ini.
+Langkah-langkah praktikum pada [tautan](https://github.com/ferdyfebriyanto/http-request-rest-api-flutter/files/9502443/24.-.HTTP.Request.dan.REST.API.pdf)
+ ini.
 
 ![Hasil praktikum rest api](./images/01.png)
 
