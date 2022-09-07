@@ -10,7 +10,7 @@ class MovieList extends StatefulWidget {
 
 class _MovieListState extends State<MovieList> {
   String result = "";
-  HttpService service;
+  late HttpService service;
 
   @override
   void initState() {
@@ -22,7 +22,7 @@ class _MovieListState extends State<MovieList> {
   Widget build(BuildContext context) {
     service.getPopularMovies().then((value) {
       setState(() {
-        result = value;
+        result = value!;
       });
     });
     return Scaffold(
